@@ -8,7 +8,7 @@ const AdminDashboard = () => {
   // Fetch all slots
   const fetchSlots = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/detail/slots", {
+      const res = await fetch("https://full-stack-appointment-booking.onrender.com/api/detail/slots", {
         method: "GET",
         credentials: "include",
       });
@@ -30,7 +30,7 @@ const AdminDashboard = () => {
   // Fetch all bookings
   const fetchBookings = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/detail/allbooking", {
+      const res = await fetch("https://full-stack-appointment-booking.onrender.com/api/detail/allbooking", {
         method: "GET",
         credentials: "include",
       });
@@ -60,7 +60,7 @@ const AdminDashboard = () => {
       return alert("Please enter both start and end times");
     }
     try {
-      const res = await fetch("http://localhost:8000/api/detail/create-slots", {
+      const res = await fetch("https://full-stack-appointment-booking.onrender.com/api/detail/create-slots", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -84,7 +84,7 @@ const AdminDashboard = () => {
   // Delete a slot
   const handleDeleteSlot = async (slotId) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/detail/slots/${slotId}`, {
+      const res = await fetch(`https://full-stack-appointment-booking.onrender.com/api/detail/slots/${slotId}`, {
         method: "DELETE",
         credentials: "include",
       });
