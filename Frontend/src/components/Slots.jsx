@@ -6,7 +6,7 @@ export default function Slots() {
   // Fetch available slots
   const fetchSlots = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/detail/slots", {
+      const res = await fetch("https://full-stack-appointment-booking.onrender.com/api/detail/slots", {
         method: "GET",
         credentials: "include",
       });
