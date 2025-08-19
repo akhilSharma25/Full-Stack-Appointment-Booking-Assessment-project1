@@ -34,7 +34,7 @@ export default function BookSlot() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:8000/api/detail/bookings", {
+      const res = await fetch("https://full-stack-appointment-booking.onrender.com/api/detail/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
