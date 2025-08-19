@@ -6,7 +6,7 @@ export default function MyBookings() {
   // Fetch user's bookings
   const fetchBookings = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/detail/bookings/me", {
+      const res = await fetch("https://full-stack-appointment-booking.onrender.com/api/detail/bookings/me", {
         method: "GET",
         credentials: "include",
       });
