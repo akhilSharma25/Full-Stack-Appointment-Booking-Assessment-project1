@@ -54,6 +54,7 @@ userRoute.route("/login").post(async (req, res) => {
       .json({
         message: `Welcome back ${userExist.username}`,
         success: true,
+        token,
         user: { id: userExist._id, username: userExist.username, email: userExist.email, role: userExist.role },
       });
   } catch (error) {
