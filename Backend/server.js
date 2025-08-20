@@ -13,7 +13,7 @@ dotenv.config()
 const app=express();
 
 app.use(cors({
-  origin: ["https://full-stack-appointment-booking-sexw.onrender.com","https://appointmentappasses.netlify.app"], 
+  origin: "https://appointmentappasses.netlify.app", 
   credentials: true
 }));
 
